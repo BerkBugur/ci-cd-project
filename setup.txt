@@ -1,0 +1,18 @@
+1) Jenkins Server
+Ports -> 8080/all ,22/myip
+Userdata -> jenkins-server.sh
+AWS -> t2.small , Ubuntu
+Plugins->
+  TOOLS:
+    OracleJDK-> /usr/lib/jvm/
+    Path: /usr/lib/jvm/java-1.11.0-openjdk-amd64
+
+2) Nexus Server
+Ports -> 8081/myip&jenkins-sg ,22/myip
+Userdata -> nexsus-server.sh
+AWS -> t2.medium , CentOS
+
+2) Sonar Server
+Ports -> 80/myip&jenkins-sg ,22/myip
+Userdata -> nexsus-server.sh
+AWS -> t2.medium , Ubuntu
