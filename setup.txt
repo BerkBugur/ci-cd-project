@@ -6,6 +6,8 @@ Plugins->
   TOOLS:
     OracleJDK-> /usr/lib/jvm/
     Path: /usr/lib/jvm/java-1.11.0-openjdk-amd64
+Docker indirmek lazım ve docker groupa jenkinsi eklemeliyiz.
+Eklentileri eklemeliyiz ve sonar kullanacaksak setup yapmalıyız.
 
 2) Nexus Server
 Ports -> 8081/myip&jenkins-sg ,22/myip
@@ -16,3 +18,7 @@ AWS -> t2.medium , CentOS
 Ports -> 80/myip&jenkins-sg ,22/myip
 Userdata -> nexsus-server.sh
 AWS -> t2.medium , Ubuntu
+
+3) Kops server
+helm indirmeli namespace oluşturmalı
+kops indirmeli aws-cli 
