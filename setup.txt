@@ -18,6 +18,7 @@ AWS -> t2.medium , CentOS
 Ports -> 80/myip&jenkins-sg ,22/myip
 Userdata -> nexsus-server.sh
 AWS -> t2.medium , Ubuntu
+Setup yapılmalı 
 
 3) Kops server
 helm indirmeli namespace oluşturmalı
